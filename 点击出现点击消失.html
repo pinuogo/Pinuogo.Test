@@ -1,0 +1,20 @@
+<html>
+	</head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>innerHTML</title>
+	<script>
+		function inter() {
+			var inter = document.getElementById("inner");
+			if(inter.innerHTML == "") {
+				inter.innerHTML = "显示的文字";
+			} else inter.innerHTML = ""
+		}
+	</script>
+	</head>
+
+	<body>
+		<input type="button" value="点击添加文字" onclick="inter()">
+		<div id='inner'></div>
+	</body>
+
+</html>

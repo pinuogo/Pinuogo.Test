@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Array对象 </title>
+<script type="text/javascript">
+window.onload=function(){
+        var myarr = new Array("80","16","50","9","100","1");
+        var aa=document.getElementById('aa');
+        var p=document.getElementById('p');
+        var bn=document.getElementById('bn');
+        bn.onclick=function(){
+        aa.innerHTML=myarr.sort(sortNum);
+      
+    }
+}           //加载JavaScript
+
+//$(function(){
+// 
+//});         //加载JQuery
+//
+//$.ready(function(){
+// 
+//});         //加载JQuery
+ 
+        function sortNum(a,b) {
+            return a-b;   //升序为a-b，降序为b-a
+        }
+</script>
+<style type="text/css">
+    div{
+        border:1px solid red;
+        width:200px;
+        height:200px;
+        padding:0px;
+    }
+</style>
+</head>
+<body>
+    <div id="aa">
+        <p id='p'>我要调试</p>
+    </div>
+    <input type="button" value="点击" id='bn' >
+</body>
+</html>
